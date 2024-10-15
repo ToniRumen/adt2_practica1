@@ -26,15 +26,23 @@
             <editorial>Ediciones B</editorial>
                     
         </libro>
-            
+                
         <prestamo>
+                        
             <libro isbn="3243242">
+                                
                 <titulo/>
+                                
                 <autor/>
+                                
                 <anyo/>
+                                
                 <editorial/>
+                            
             </libro>
+                    
         </prestamo>
+            
     </prestamo>
         
     <venta>

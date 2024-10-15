@@ -1,4 +1,4 @@
-package com.torust.ejercicio1;
+package com.toni.ejercicio1;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -76,9 +76,9 @@ public class App1 {
         Transformer idTransform = transFactory.newTransformer();
         idTransform.setOutputProperty(OutputKeys.METHOD, "xml");
         idTransform.setOutputProperty(OutputKeys.INDENT,"yes");
-        Source input = new DOMSource(libroPrestamoNuevo); //Funcionará?
+        Source input = new DOMSource(arbol); //Se guarda el arbol nuevo entero
         Result output = new StreamResult(
-                new FileOutputStream("serializacionXML-JAXP.xml"));
+                new FileOutputStream("src/main/resources/ejercicio1.xml"));
         idTransform.transform(input, output);
 //Mostrar XML por pantalla.
         Result pantalla = new StreamResult(System.out);
