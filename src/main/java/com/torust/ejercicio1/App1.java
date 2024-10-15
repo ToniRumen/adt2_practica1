@@ -80,7 +80,7 @@ public class App1 {
         Result output = new StreamResult(
                 new FileOutputStream("serializacionXML-JAXP.xml"));
         idTransform.transform(input, output);
-//Mostrar XML por pantalla
+//Mostrar XML por pantalla.
         Result pantalla = new StreamResult(System.out);
         idTransform.transform(input, pantalla);
 
